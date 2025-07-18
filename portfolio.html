@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pugazharasu A | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .light-mode {
+      background-color: #f9f9f9;
+      color: #121212;
+    }
+    header {
+      background: #121212;
+      padding: 40px 0;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 162, 255, 0.2);
+    }
+    header h1 { font-size: 2.5rem; color: #f9f9f9; }
+    header p { font-size: 1.2rem; color: #bbb; }
+    #p{color: #f9f9f9;}
+
+    .theme-toggle {
+      font-size: 1.5rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: grey;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #1a1a1a;
+      box-shadow: 0 0 10px yellow;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #00aaff;
+      margin: 0 15px;
+      text-decoration: none;
+      padding: 10px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background: white;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 5px;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+    .about img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(0, 162, 255, 0.3);
+    }
+    .skills li {
+      margin-bottom: 10px;
+    }
+    button {
+      background: #0077cc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+    .project-card {
+      background: #1c1c1c;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 162, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #121212;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav a {
+        margin: 10px;
+      }
+    }
+    :root {
+  --link-color: white; /* Default (light theme) */
+}
+
+body.light-mode {
+  --link-color: black; /* Light blue for dark theme */
+}
+
+  </style>
+</head>
+<body>
+  <header>
+   <p> <h1>Pugazharasu A</h1></p>
+    <p>Web Developer | BCA Graduate</p>
+    <div style="text-align: center; margin-top: 20px;"><button class="theme-toggle" onclick="toggleTheme()">🌓</button></div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <img src="D:\selva kavi marriage\100EOS5D\5Z5A2006.jpg"  alt="Pugazharasu Photo" />
+      <div>
+        <p>Hello! I’m Pugazharasu A., a passionate and committed Bachelor of Computer Applications (BCA) student at Guru Nanak College, Chennai. I believe technology is more than just tools—it's the key to solving real-world challenges. With a strong academic background and hands-on experience in web development, I aim to grow in the tech industry by contributing to innovative solutions and working with like-minded professionals.
+
+I’m known for my dedication, quick learning, and eagerness to apply my knowledge in meaningful ways. Whether it's front-end design, back-end integration, or UI/UX thinking—I approach every project with energy and a problem-solving mindset.
+
+</p>
+        <button><a href="Downloads\(WEB DEVELOPER)-PUGAZH RESUME.pdf" style="color: #f9f9f9;text-decoration: none;" class="btn" download>Download Resume</a></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2> Technical Skills</h2>
+    <ul class="skills">
+      <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript – Skilled in building responsive, user-friendly interfaces.</li>
+      <li><strong>Back-End:</strong> PHP, MySQL – Proficient in server-side scripting and database management.</li>
+      <li><strong>Design:</strong> Adobe Photoshop, Canva, Adobe PageMaker – Capable of creating intuitive layouts and visual assets.</li>
+      <li><strong>Tools:</strong> Experience with code editors (VS Code), browser developer tools, and basic version control (Git).</li>
+      <li><strong>Soft Skills:</strong> Team Collaboration, Project Leadership, Problem Solving, and Analytical Thinking – essential for agile web development environments.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div id="p"><div class="project-card">
+      <h3>Digi Bus Pass Using QR Code</h3>
+      <p><strong>Role:</strong> Full-Stack Developer</p>
+        <p><strong>Project Type:</strong> Academic Mini Project</p>
+        <p><strong>Duration: </strong>  3 Months</p>
+        <p><strong>Team Size:</strong>  Individual</p>
+        <p><strong>Technologies Used: </strong> HTML5, CSS3, JavaScript, PHP, MySQL</p>
+      <p>The Digi Bus Pass Using QR Code project is a full-stack web application developed to revolutionize the traditional method of issuing and verifying bus passes, especially for educational institutions and local public transportation systems. This digital solution was designed to automate and streamline the entire process of bus pass registration, generation, and validation, eliminating the need for physical passes and manual verification.
+
+The system enables students and commuters to register for a bus pass online by filling out a secure form and submitting the necessary identification details. Once approved by an administrator, a unique QR code is generated automatically for each user, which serves as a digital version of their bus pass. This QR code can then be scanned by the conductor or transport personnel using any standard scanner or mobile device to verify the authenticity and validity of the pass in real-time.
+
+The admin panel of the application provides full control over the user data, registration approvals, bus route management, and record maintenance. Built with HTML5, CSS3, JavaScript, PHP, and MySQL, the application ensures fast performance, secure user data handling, and responsive user interfaces across both desktop and mobile platforms.
+
+Beyond just convenience, this system addresses several challenges present in the traditional setup — such as time-consuming manual entries, forgery of physical passes, and difficulty in record maintenance. With real-time QR verification and centralized data storage, the application enhances transparency, accountability, and operational efficiency.
+
+This project also considers future scalability by incorporating a prototype payment gateway, which allows for seamless online payments for the bus pass. Although simplified in this academic phase, it demonstrates the potential for integration with secure payment APIs in a production environment.
+
+In addition, the design promotes eco-conscious practices by reducing the reliance on paper and physical IDs, aligning with the goals of sustainable development in public transport infrastructure.
+
+</p>
+      <div style="text-align: center; margin-top: 20px;"><button onclick="alert('Project details coming soon!')">View Project</button></div>
+    </div></div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor of Computer Applications (BCA)</strong> – Guru Nanak College of Arts and Science, Chennai
+2022 – 2025<br>
+Achieved an aggregate of 89%. Focused on core areas such as programming, database management, and software development.</li>
+      <li><strong> Higher Secondary Certificate (Class 12)</strong> – A.K.T Academy Matriculation Higher Secondary School
+Completed in 2022
+Secured 80% with a concentration in Computer Science and Mathematics.</li>
+      <li><strong>Secondary School Leaving Certificate (Class 10)</strong> –  A.K.T Academy Matriculation Higher Secondary School
+Completed in 2020
+Attained 79%, with a solid foundation in science and mathematics.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+      <p style="display: flex; flex-wrap: wrap; gap: 85px;"><span>📧 Email: <a href="mailto:pugazh29arasu@gmail.com" style="color: var(--link-color); text-decoration: none;">pugazh29arasu@gmail.com</a></span>
+  <span>📞 Phone: <a href="tel:9003386078" style="color:var(--link-color); text-decoration: none;">9003386078</a></span>
+  <span>📍 Location: Chennai, India</span></p>
+    
+<div style="text-align: center; margin-top: 20px;">
+  <a href="mailto:pugazh29arasu@gmail.com">
+    <button style="padding: 10px 20px; font-size: 16px;">Send Message</button>
+  </a>
+</div>
+  </section>
+
+
+  <script>
+    // 3D effect on project card
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const x = e.offsetX / card.offsetWidth - 0.5;
+        const y = e.offsetY / card.offsetHeight - 0.5;
+        card.style.transform = `rotateX(${-y * 10}deg) rotateY(${x * 10}deg)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'rotateX(0) rotateY(0)';
+      });
+    });
+
+    // Theme toggle
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
+</body>
+</html>
